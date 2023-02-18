@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>https://MyFitness.com</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Julee&family=Merriweather+Sans:wght@600&family=Open+Sans&family=Public+Sans:wght@800&family=Zeyada&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      background-image: url(./MEDIA/abs-1850926.jpg);
+      /* height: 1000px; */
+      /* width: 1100px;    */
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: whitesmoke;
+      font-family: "Public Sans", sans-serif;
+    }
+    .left {
+      border: 2px solid rgb(165, 239, 165);
+      display: inline-block;
+      position: absolute;
+      left: 60px;
+      top: 12px;
+      /* height: 130px; */
+    }
+    .left h6 {
+      text-align: center;
+      color: greenyellow;
+      font-size: 15px;
+      margin: auto;
+    }
+    .left img {
+      width: 100px;
+      height: 80px;
+      background-color: black;
+      filter: invert(70%);
+      /* padding-left: 20px; */
+    }
+    .center {
+      /* border: 2px solid rgb(68, 135, 42); */
+      display: block;
+      width: 50%;
+      margin: 12px auto;
+    }
+    .right {
+      /* border: 2px solid green; */
+      display: inline-block;
+      position: absolute;
+      right: 10px;
+      top: 15px;
+    }
+    .right button{
+      border: none;
+    }
+    .btn {
+      margin: 0px 10px 0px 10px;
+      background-color: rgba(21, 21, 21, 0.189);
+      color: white;
+      padding: 3px 14px;
+      /* border: 2px solid rgb(153, 154, 152); */
+      /* border-radius: 10px; */
+      font-size: 15px;
+      cursor: pointer;
+      font-family: "Public Sans", sans-serif;
+    }
+    .btn:hover {
+      background-color: yellow;
+      color: black;
+      font-weight: bold;
+    
+    }
+    #b1 {
+      text-align: center;
+      display: block;
+      width: 30%;
+      margin: 20px auto;
+      border-radius: 4px;
+      border: none;
+    }
+    .navbar li {
+      display: inline-block;
+    }
+    .navbar li a {
+      color: rgb(217, 220, 214);
+      text-decoration: none;
+      padding: 34px 23px;
+      font-size: 18px;
+    }
+    .navbar li a:hover {
+      text-decoration: underline;
+      color: red;
+    }
+    .container {
+      /* border: 2px solid rgb(235, 230, 230); */
+      width: 33%;
+      margin: 50px 2px 0px 900px;
+      padding: 75px 75px;
+      border-radius: 28px;
+      display: inline-block;
+    }
+    .container h1 {
+      text-align: center;
+    }
+    .form-group input {
+      text-align: center;
+      display: block;
+      width: 300px;
+      padding: 6px;
+      border: 2px solid black;
+      margin: 10px auto;
+      border-radius: 20px;
+      font-size: 14px;
+      font-family: "Public Sans", sans-serif;
+    }
+    .form-group input:hover{
+      background-color: yellow;
+      color: black;
+      cursor: pointer;
+    }
+    .form-group input :-moz-placeholder:hover{
+      /* background-color: yellow; */
+      color: black;
+    }
+  </style>
+
+  <body>
+    <!-- left box for logo -->
+    <div class="left" id="logo">
+      <img src="./MEDIA/gym logo.jpg" alt="" />
+      <h6>MY FITNESS</h6>
+    </div>
+    <!-- center box for navigation -->
+    <div class="center" id="navigation">
+      <ul class="navbar">
+        <li><a href="https://www.equinox.com/" class="active"> Home</a></li>
+        <li>
+          <a
+            href="https://www.shapefit.com/calculators/full-body-analysis-calculator.html"
+            >Fitness Calculator</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://bigmusclesnutrition.com/?utm_source=bing&utm_medium=Search&utm_campaignname=&utm_term=big%20muscle%20supplement&msclkid=f24341b67265113b509d224615bdca07"
+            >Supliments Shop</a
+          >
+        </li>
+        <li><a href="https://www.equinox.com/faq">FAQs</a></li>
+      </ul>
+    </div>
+    <!-- right box for saerch and button -->
+    <div class="right" id="search">
+      <button class="btn">Call Us Know</button>
+      <button class="btn">Email Us</button>
+    </div>
+    <div class="container">
+      <h1>Join The Best GyM of Delhi Now</h1>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" placeholder="Enter your Name" />
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Enter your Age" />
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Enter your Gender" />
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Enter your Locality" />
+        </div>
+        <button class="btn" id="b1">SUBMIT</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+<!-- <script>
+        function changBg{ 
+            const image=[
+                'url("./MEDIA/pexels-pixabay-260447.jpg")',
+                'url("./MEDIA/pexels-pixabay-416809.jpg")',
+                'url("./MEDIA/pexels-the-lazy-artist-gallery-2247179.jpg")',
+                'url("./MEDIA/wp7597841-gym-fitness-wallpapers.jpg")',
+                'url("./MEDIA/wp8077435-gym-4k-wallpapers.jpg")',
+                'url("./MEDIA/wp8077440-gym-4k-wallpapers.jpg")',
+                'url("./MEDIA/wp8077446-gym-4k-wallpapers.jpg")',
+                'url("./MEDIA/wp8077459-gym-4k-wallpapers.jpg")',
+                'url("./MEDIA/wp8077581-gym-4k-wallpapers.jpg")',
+                'url("./MEDIA/wp8077684-gym-4k-wallpapers.jpg")',
+                'url("./MEDIA/wp8077707-gym-4k-wallpapers.jpg")',
+                'url("./MEDIA/wp8077727-gym-4k-wallpapers.jpg")',
+
+            ]
+            const body=document.querySelector('body')
+            const bg=image[Math.floor(Math.random()*image.length)];
+            body.style.backgroundImage=bg;
+        
+        }
+        setInterval(changBg,1000)
+     </script> -->
